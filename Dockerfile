@@ -1,7 +1,7 @@
 FROM python:2.7-slim
 
 RUN apt-get -y update
-RUN apt-get install -y \
+RUN apt-get install -y --fix-missing \
     build-essential \
     cmake \
     gfortran \
