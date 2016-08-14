@@ -24,7 +24,7 @@ RUN apt-get install -y \
     python-protobuf\
     software-properties-common \
     zip \
-    && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+    && apt-get clean && rm -rf /tmp/* /var/tmp/*
 
 RUN cd ~ && \
     mkdir -p dlib && \
